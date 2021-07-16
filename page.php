@@ -94,6 +94,8 @@ if(have_posts()){
                             <?php if($query_home_hb->have_posts()){ ?>
 
                                 <?php while($query_home_hb->have_posts()) : $query_home_hb->the_post();
+                                
+                                $title_post_leccion = get_the_title();
                                                                 
                                 $fecha_inicio = get_post_meta(get_the_ID(), 'fecha_inicio', true);
                                 $year = substr($fecha_inicio, 0, -4);
@@ -136,21 +138,26 @@ if(have_posts()){
                                     wp_reset_postdata();                                     
                                     
                                     
-                                } elseif ( Date("dmY") > $fecha_final ) { ?>
+                                } else {
+                                                                        
+                                    if ( Date("Ymd") < $fecha_final ) { ?>
 
-                                    <li class="h5 pt-2 pb-1 border-top">
-                                        <span class="h4 text-dark" style="line-height: 1em; font-family: Raleway, sans-serif;">
-                                            <small><?php the_title(); ?></small>
-                                        </span>                                        
-                                    </li><?php
+                                        <li class="h5 pt-2 pb-1 border-top">
+                                            <span class="h4 text-dark" style="line-height: 1em; font-family: Raleway, sans-serif;">
+                                                <small><?php the_title(); ?></small>
+                                            </span>                                        
+                                        </li><?php
                                     
-                                } else { ?>
+                                    } else { ?>
                                     
-                                    <li class="h5 pt-2 pb-1 border-top">
-                                        <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4">
-                                            <small><?php the_title(); ?></small>
-                                        </a>
-                                    </li><?php
+                                        <li class="h5 pt-2 pb-1 border-top">
+                                            <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4">
+                                                <small><?php the_title(); ?></small>
+                                            </a>
+                                        </li><?php
+                                        
+                                        
+                                    }
                                     
                                 }
                                 

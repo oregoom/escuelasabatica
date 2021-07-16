@@ -94,30 +94,30 @@ if(have_posts()){
                             <?php if($query_home_hb->have_posts()){ ?>
 
                                 <?php while($query_home_hb->have_posts()) : $query_home_hb->the_post();
-                                
-                                $title_post_leccion = get_the_title();
-                                
+                                                                
                                 $fecha_inicio = get_post_meta(get_the_ID(), 'fecha_inicio', true);
                                 $year = substr($fecha_inicio, 0, -4);
                                 $mes = substr($fecha_inicio, 4, -2);
                                 $dia = substr($fecha_inicio, 6);
                                 
-                                $fecha_inicio = "$dia/$mes/$year";
+//                                $fecha_inicio = "$dia/$mes/$year";
                                 
-                                $fecha_final = get_post_meta(get_the_ID(), 'fecha_final', true);
+                                echo $fecha_final = get_post_meta(get_the_ID(), 'fecha_final', true);
                                 $year = substr($fecha_final, 0, -4);
                                 $mes = substr($fecha_final, 4, -2);
                                 $dia = substr($fecha_final, 6);
                                 
-                                $fecha_final = "$dia/$mes/$year";                                 
-                                                                
-                                if( (Date("d/m/Y") >= $fecha_inicio) && (Date("d/m/Y") <= $fecha_final) ){ 
-                                    
+//                                $fecha_final = "$dia/$mes/$year";    
+                                echo Date("Ymd");
+                                                                                                
+                                if( (Date("Ymd") >= $fecha_inicio) && (Date("Ymd") <= $fecha_final) ) {
+                                                                        
                                     $wp_query_post = new WP_Query( array (
                                             'post_type' => 'post',
                                             'post_status' => 'publish',
                                             'meta_key'   => 'fecha_leccion',
-                                            'meta_value' => date("Ymd") //Fecha presente, si no cumple... no imprime en contenido
+                                            'meta_value' => date("Ymd"), //Fecha presente, si no cumple... no imprime en contenido
+                                            'posts_per_page' => -0
                                     ));
                                                                         
                                     if($wp_query_post->have_posts()){
@@ -137,7 +137,7 @@ if(have_posts()){
                                     wp_reset_postdata();                                     
                                     
                                     
-                                } elseif ( Date("d/m/Y") < $fecha_final ) { ?>
+                                } elseif ( Date("dmY") > $fecha_final ) { ?>
 
                                     <li class="h5 pt-2 pb-1 border-top">
                                         <span class="h4 text-dark" style="line-height: 1em; font-family: Raleway, sans-serif;">

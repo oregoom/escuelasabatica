@@ -102,13 +102,12 @@ if(have_posts()){
                                 
 //                                $fecha_inicio = "$dia/$mes/$year";
                                 
-                                echo $fecha_final = get_post_meta(get_the_ID(), 'fecha_final', true);
+                                $fecha_final = get_post_meta(get_the_ID(), 'fecha_final', true);
                                 $year = substr($fecha_final, 0, -4);
                                 $mes = substr($fecha_final, 4, -2);
                                 $dia = substr($fecha_final, 6);
                                 
 //                                $fecha_final = "$dia/$mes/$year";    
-                                echo Date("Ymd");
                                                                                                 
                                 if( (Date("Ymd") >= $fecha_inicio) && (Date("Ymd") <= $fecha_final) ) {
                                                                         

@@ -123,13 +123,19 @@ if(have_posts()){
                                                                         
                                     if($wp_query_post->have_posts()){
                                         
-                                        while ($wp_query_post->have_posts()) : $wp_query_post->the_post(); ?>
+                                        while ($wp_query_post->have_posts()) : $wp_query_post->the_post(); 
+                                        
+                                            $day_leccion = get_post_meta(get_the_ID(), 'dia_nombre_leccion', true); 
+                                            
+                                            if( $day_leccion = "Saturday") { ?>
 
-                                            <li class="h5 pt-2 pb-1 border-top">
-                                                <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4 text-danger">
-                                                    <small><?php echo $title_post_leccion; ?></small>
-                                                </a>
-                                            </li><?php
+                                                <li class="h5 pt-2 pb-1 border-top">
+                                                    <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4 text-danger">
+                                                        <small><?php echo $title_post_leccion; ?></small>
+                                                    </a>
+                                                </li> <?php
+                                                
+                                            }
 
                                         endwhile;
                                         

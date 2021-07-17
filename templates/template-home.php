@@ -17,7 +17,7 @@ if(have_posts()){
 <main>
     <article>        
         
-        <section class="container pt-5 pb-4">
+        <section class="container pt-5 pb-3">
             
             <h1 class="pb-2 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;"><span style="color: #f76300;">Escuela</span> Sabática<?php // the_title(); ?></h1>
                         
@@ -43,7 +43,9 @@ if(have_posts()){
                 
                 <h2>Guía de estudio de la Biblia</h2>
                 
-                <p><strong>Bienvenido</strong> a nuestra página web <strong>historiasdelabiblia.org</strong>, en donde podrás encontrar las Mejores y Grandes <strong>HISTORIAS de la BIBLIA</strong>, para Adultos, Jóvenes y Niños completamente ilustradas para leer.</p>
+                <p>La <strong>Escuela Sabática</strong> es el principal sistema de educación religiosa de la Iglesia, y tiene cuatro propósitos: el estudio de las escrituras, la confraternización, compartir la fe con la comunidad y dar énfasis a la misión mundial de la iglesia (<em>Manual de la Iglesia, p. 93</em>).</p>
+                
+                <p>A continuación, las <em>Guías de Estudio de la Biblia para la Escuela Sabática</em>:</p>
 
             </div>
             

@@ -45,7 +45,7 @@ if(have_posts()){
                 
                 <p>La <strong>Escuela Sabática</strong> es el principal sistema de educación religiosa de la Iglesia, y tiene cuatro propósitos: el estudio de las escrituras, la confraternización, compartir la fe con la comunidad y dar énfasis a la misión mundial de la iglesia (<em>Manual de la Iglesia, p. 93</em>).</p>
                 
-                <p>A continuación, las <em>Guías de Estudio de la Biblia para la Escuela Sabática</em>:</p>
+                <p>A continuación, las <em>Guías de Estudio de la Biblia para la Escuela Sabática <?php echo  Date('Y'); ?></em>:</p>
 
             </div>
             
@@ -79,14 +79,16 @@ if(have_posts()){
                     
                         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                             <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top']); ?>
+                                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top shadow']); ?>
                                 <!--<img class="rounded-top img-fluid" src="https://historiasdelabiblia.org/wp-content/uploads/2020/06/historia-del-arca-noe.jpg">-->
                             </a>
 
-                            <div class="pt-2 text-center" style="line-height: 1em; font-family: Raleway, sans-serif;">
+                            <div class="pt-3 text-center" style="line-height: 1em; font-family: Raleway, sans-serif;">
                                 <small class="h5 text-dark"><?php the_title(); ?></small>
                             </div>
-
+                            
+                            <p class="pt-2 text-center h6"><strong><?php echo get_post_meta(get_the_ID(), 'periodo_de_guia_de_estudio_de_la_biblia', true); ?></strong></p>
+                            
                             <div class="pb-3 text-center" style="line-height: 1em; font-family: Raleway, sans-serif;">
                                 <a href="<?php the_permalink(); ?>" class="h4">
                                     <small>Entrar ahora</small>

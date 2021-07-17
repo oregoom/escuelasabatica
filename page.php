@@ -63,7 +63,7 @@ if(have_posts()){
                     
                     <div class="col-lg-4 col-md-4 pb-4">
                         
-                        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top']); ?>
+                        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top shadow']); ?>
                         
                     </div>
                     

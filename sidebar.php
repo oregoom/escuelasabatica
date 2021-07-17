@@ -16,38 +16,65 @@ function get_videos_de_youtube($id_post_sabado){
         
     if( get_post_meta($id_post_sabado, 'alejandro_bullon', true) ){ 
         
-        $video_one = get_post_meta($id_post_sabado, 'alejandro_bullon', true); ?>
-    
-        <div class="pb-4 text-center">
-            <a href="https://www.youtube.com/watch?v=<?php echo $video_one; ?>" target="_blank">
-                <img src="https://img.youtube.com/vi/<?php echo $video_one; ?>/mqdefault.jpg" class="img-fluid">
-            </a>    
-        </div> <?php
+        $ID_YouTube = get_post_meta($id_post_sabado, 'alejandro_bullon', true); 
+        
+        get_amp_lightbox_youtube($ID_YouTube); 
+        
     }
     
     if( get_post_meta($id_post_sabado, 'escuela_sabatica_2000', true) ){ 
         
-        $video_two = get_post_meta($id_post_sabado, 'escuela_sabatica_2000', true); ?>
-    
-        <div class="pb-4 text-center">
-            <a href="https://www.youtube.com/watch?v=<?php echo $video_two; ?>" target="_blank">
-                <img src="https://img.youtube.com/vi/<?php echo $video_two; ?>/mqdefault.jpg" class="img-fluid">
-            </a>    
-        </div> <?php
+        $ID_YouTube = get_post_meta($id_post_sabado, 'escuela_sabatica_2000', true); 
+        
+        get_amp_lightbox_youtube($ID_YouTube); 
+        
     }
     
     if( get_post_meta($id_post_sabado, 'bosquejo_de_la_leccion', true) ){ 
         
-        $video_three = get_post_meta($id_post_sabado, 'bosquejo_de_la_leccion', true); ?>
-    
-        <div class="pb-4 text-center">
-            <a href="https://www.youtube.com/watch?v=<?php echo $video_three; ?>" target="_blank">
-                <img src="https://img.youtube.com/vi/<?php echo $video_three; ?>/mqdefault.jpg" class="img-fluid">
-            </a>    
-        </div> <?php
+        $ID_YouTube = get_post_meta($id_post_sabado, 'bosquejo_de_la_leccion', true); 
+        
+        get_amp_lightbox_youtube($ID_YouTube); 
+        
     }
     
 }
+
+
+
+/*
+ * FUNCIÓN para AMP-LIGHTBOX
+ */
+function get_amp_lightbox_youtube($ID_YouTube){ ?>
+    
+    <amp-lightbox id="my-lightbox-<?php echo $ID_YouTube; ?>" layout="nodisplay">
+        <div class="lightbox" tabindex="0">
+
+             <!-- Vídeo de YouTube -->
+             <div class="container">
+                 <div class="overflow-hidden">
+                    <!--<h5 class="text-light float-left">Alejandro Bullón</h5>-->
+                    <span role="button" class="text-light h2 float-right" on="tap:my-lightbox-<?php echo $ID_YouTube; ?>.close">&times;</span>
+                  </div>
+
+                  <div class="">
+                    <amp-youtube
+                    data-videoid="<?php echo $ID_YouTube; ?>"
+                    layout="responsive"
+                    width="480"
+                    height="270"
+                    ></amp-youtube>
+                  </div>
+            </div>
+
+        </div>
+    </amp-lightbox>
+
+    <div class="pb-4 text-center">
+        <img src="https://img.youtube.com/vi/<?php echo $ID_YouTube; ?>/mqdefault.jpg" class="img-fluid" on="tap:my-lightbox-<?php echo $ID_YouTube; ?>">
+    </div> 
+
+<?php }
 
 
 

@@ -31,11 +31,16 @@ if(have_posts()){
                 
             </div>
             
-            <div class="mt-4 text-center">
+            <div class="mt-2 mt-lg-4 text-center">
                 
-                <h2>Guía de estudio de la Biblia</h2>
+                <!--//DIV para (PC) -->
+                <div class="d-none d-lg-block">
+                    
+                    <h2>Guía de estudio de la Biblia</h2>
                 
-                <p>La <strong>Escuela Sabática</strong> es el principal sistema de educación religiosa de la Iglesia, y tiene cuatro propósitos: el estudio de las escrituras, la confraternización, compartir la fe con la comunidad y dar énfasis a la misión mundial de la iglesia (<em>Manual de la Iglesia, p. 93</em>).</p>
+                    <p>La <strong>Escuela Sabática</strong> es el principal sistema de educación religiosa de la Iglesia, y tiene cuatro propósitos: el estudio de las escrituras, la confraternización, compartir la fe con la comunidad y dar énfasis a la misión mundial de la iglesia (<em>Manual de la Iglesia, p. 93</em>).</p>
+                
+                </div>
                 
                 <p>A continuación, las <em>Guías de Estudio de la Biblia para la Escuela Sabática <?php echo  Date('Y'); ?></em>:</p>
 
@@ -104,6 +109,15 @@ if(have_posts()){
                 
         
         <section class="container">
+            
+            <!--//DIV para (Movil) -->
+            <div class="d-lg-none text-center">
+                    
+                <h2 class="pb-2">Guía de estudio de la Biblia</h2>
+
+                <p>La <strong>Escuela Sabática</strong> es el principal sistema de educación religiosa de la Iglesia, y tiene cuatro propósitos: el estudio de las escrituras, la confraternización, compartir la fe con la comunidad y dar énfasis a la misión mundial de la iglesia (<em>Manual de la Iglesia, p. 93</em>).</p>
+
+            </div>
             
             <h2 class="h4 pt-4 pb-2 mb-3 text-center" style="color: #FD6003; border-bottom: 1px solid #FD6003; font-weight: 400!important; font-size: 24px!important; font-family: 'Lobster',cursive!important;">Comparte con tus amigos</h2>
             

@@ -162,7 +162,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm">
             <div class="container pt-0 pb-0">
-                <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/logo-oficial-hb.png" width="140"></a>
+                <a class="navbar-brand" href="<?php echo esc_url("https://historiasdelabiblia.org/"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/logo-oficial-hb.png" width="140"></a>
                 <button class="navbar-toggler" on="tap:sidebar.toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -176,7 +176,7 @@
                 </div>
 
                 <amp-sidebar id="sidebar" class="bg-white" layout="nodisplay" side="right">
-                    <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>"><img style="margin-top: 10px; margin-left: 50px;" src="<?php echo get_template_directory_uri(); ?>/logo-oficial-hb.png" width="140"></a>
+                    <a class="navbar-brand" href="<?php echo esc_url("https://historiasdelabiblia.org/"); ?>"><img style="margin-top: 10px; margin-left: 50px;" src="<?php echo get_template_directory_uri(); ?>/logo-oficial-hb.png" width="140"></a>
                     <div class="navbar-collapse" style="padding: 10px 50px 10px 50px;">
                         <ul class="navbar-nav ml-auto">
                             

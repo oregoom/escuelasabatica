@@ -30,10 +30,10 @@ if(have_posts()){
                     </div>                
                 <?php } ?>
                 
-                <!--//GOOGLE ADSENSE 300x250 (Movil) -->
-                <?php if(get_option('template_oregoom_adsense_300_250') != ''){ ?>                
-                    <div class="text-center d-lg-none">                        
-                        <?php  echo get_option('template_oregoom_adsense_300_250'); ?>                        
+                <!--//GOOGLE ADSENSE 320x50 (Movil) -->
+                <?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?>                
+                    <div class="text-center d-lg-none sticky-top">                        
+                        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
                     </div>                
                 <?php } ?>
                 

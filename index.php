@@ -334,7 +334,8 @@ if(have_posts()){
             ?>                         
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Sábado</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Sábado</a>
             
             
             
@@ -343,31 +344,38 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
             <?php $ID_post_actal = siguiente_post( $ID_post_actal ); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
             <?php $ID_post_actal = siguiente_post( $ID_post_actal ); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
                     
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
                     
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>
                     
             <?php
             
@@ -384,11 +392,13 @@ if(have_posts()){
             
             ?> 
 
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
                         
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Domingo</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Domingo</a>
             
             
             
@@ -397,27 +407,33 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
             <?php $ID_post_actal = siguiente_post( $ID_post_actal ); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
                     
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
                     
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>   
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>   
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>   
             
             <?php
             
@@ -435,13 +451,16 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Lunes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Lunes</a>
             
             
             
@@ -450,23 +469,28 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
             
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
                     
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
                     
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>
             
             <?php
             
@@ -481,15 +505,19 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Martes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Martes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Martes</a>
             
             
             <?php  // Resetear Post Data 
@@ -497,19 +525,23 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
                     
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>
             
             <?php
             
@@ -524,17 +556,22 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
             
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Miercoles</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Miercoles</a>
             
             
             <?php  // Resetear Post Data 
@@ -542,15 +579,18 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
 
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>
             
             <?php
             
@@ -565,19 +605,25 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
-            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
             
             
             
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Jueves</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Jueves</a>
             
             
             <?php  // Resetear Post Data 
@@ -585,11 +631,13 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
             <?php $ID_post_actal = siguiente_post($ID_post_actal); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a>  
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>  
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>  
             
             <?php
             
@@ -604,20 +652,27 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
-            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
-            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
             
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
             
                         
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary">Viernes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-primary d-md-none btn-sm mb-1">Viernes</a>
             
             
             <?php  // Resetear Post Data 
@@ -625,7 +680,8 @@ if(have_posts()){
             
             <?php $ID_post_actal = siguiente_post(get_the_ID()); ?>
 
-            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger">El Sábado enseñaré...</a> 
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a> 
+            <a href="<?php echo get_permalink( $ID_post_actal ); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a> 
             
             <?php
             
@@ -641,22 +697,30 @@ if(have_posts()){
                 
             } ?> 
 
-            <a href="<?php echo $link_leccion[6]; ?>" class="btn btn-secondary">Sábado</a>
+            <a href="<?php echo $link_leccion[6]; ?>" class="btn btn-secondary d-none d-md-inline-block">Sábado</a>
+            <a href="<?php echo $link_leccion[6]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Sábado</a>
             
-            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary">Domingo</a>
+            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary d-none d-md-inline-block">Domingo</a>
+            <a href="<?php echo $link_leccion[5]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Domingo</a>
             
-            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary">Lunes</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-none d-md-inline-block">Lunes</a>
+            <a href="<?php echo $link_leccion[4]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Lunes</a>
             
-            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary">Martes</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-none d-md-inline-block">Martes</a>
+            <a href="<?php echo $link_leccion[3]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Martes</a>
             
-            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary">Miercoles</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-none d-md-inline-block">Miercoles</a>
+            <a href="<?php echo $link_leccion[2]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Miercoles</a>
             
-            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary">Jueves</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-none d-md-inline-block">Jueves</a>
+            <a href="<?php echo $link_leccion[1]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Jueves</a>
             
-            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary">Viernes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-none d-md-inline-block">Viernes</a>
+            <a href="<?php echo $link_leccion[0]; ?>" class="btn btn-secondary d-md-none btn-sm mb-1">Viernes</a>
             
                         
-            <a href="<?php get_the_permalink(); ?>" class="btn btn-danger">El Sábado enseñaré...</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-danger d-none d-md-inline-block">El Sábado enseñaré...</a>
+            <a href="<?php get_the_permalink(); ?>" class="btn btn-danger d-md-none btn-sm mb-1">El Sábado enseñaré...</a>
             
                         
             <?php

@@ -12,11 +12,20 @@
 <?php
 
 
-function get_videos_de_youtube($id_post_sabado){    
-        
-    if( get_post_meta($id_post_sabado, 'alejandro_bullon', true) ){ ?>
+function get_videos_de_youtube($id_post_sabado){
+    
+    
+    //Título del Video    
+    
+    if( ( ( get_post_meta($id_post_sabado, 'alejandro_bullon', true) ) || ( get_post_meta($id_post_sabado, 'escuela_sabatica_2000', true) ) ) || ( get_post_meta($id_post_sabado, 'escrito_esta', true) )  ){ ?>
 
-<h3 class="border-bottom pb-2 mb-3"><span class="h5">Videos</span></h3><?php
+        <h3 class="border-bottom pb-2 mb-3"><span class="h5">Videos</span></h3><?php        
+        
+    }
+    
+    // Videos de Sidebar
+    
+    if( get_post_meta($id_post_sabado, 'alejandro_bullon', true) ){ 
         
         $ID_YouTube = get_post_meta($id_post_sabado, 'alejandro_bullon', true); 
         
@@ -40,11 +49,15 @@ function get_videos_de_youtube($id_post_sabado){
         
     }
     
+    
+    
+    //Bosquejo de la lección
+    
     if( get_post_meta($id_post_sabado, 'bosquejo_de_la_leccion', true) ){ 
         
         $ID_YouTube = get_post_meta($id_post_sabado, 'bosquejo_de_la_leccion', true); ?>
         
-<h3 class="border-bottom pb-2 pt-1 mb-3"><span class="h5">Bosquejo de la lección</span></h3><?php
+        <h3 class="border-bottom pb-2 pt-1 mb-3"><span class="h5">Bosquejo de la lección</span></h3><?php
         
         get_amp_lightbox_youtube($ID_YouTube); 
         

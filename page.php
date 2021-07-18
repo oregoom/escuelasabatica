@@ -7,14 +7,6 @@ if(have_posts()){
     while(have_posts()) : the_post();  ?>
 
 
-<!--//GOOGLE ADSENSE 320x50 (Movil) -->
-<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
-    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
-        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
-    </div>   
-<?php } ?>
-
-
 
 <div class="d-none d-lg-block container-fluid pb-0 mb-0">
     
@@ -32,7 +24,7 @@ if(have_posts()){
 <main>
     <article>        
         
-        <section class="container pt-2 pb-4">
+        <section class="container pt-lg-2 pt-3 pb-lg-4 pb-2">
             
             <div class="text-center">
                 
@@ -45,15 +37,35 @@ if(have_posts()){
                 
             </div>
             
-            <h1 class="mt-4 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;">
+            <h1 class="mt-lg-4 mt-0 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;">
                 <?php the_title(); ?>
             </h1>
             
-            <div class="mt-2 text-center">
+            <!--//DIV para (PC) -->
+            <div class="mt-2 text-center d-none d-lg-block">
                 
                 <h2>Guía de estudio de la Biblia</h2>
-                
+
                 <p><strong><?php echo get_post_meta(get_the_ID(), 'periodo_de_guia_de_estudio_de_la_biblia', true); ?></strong></p>
+
+            </div>
+            
+            <!--//DIV para (Movil) -->
+            <div class="mt-3 d-lg-none row">
+                
+                <div class="col-4 pb-4">
+                        
+                    <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top shadow']); ?>
+                        
+                </div>
+                
+                <div class="col-8 pb-4">
+                
+                    <h2>Guía de estudio de la Biblia</h2>
+                
+                    <p><strong><?php echo get_post_meta(get_the_ID(), 'periodo_de_guia_de_estudio_de_la_biblia', true); ?></strong></p>
+                
+                </div>
 
             </div>
             
@@ -66,7 +78,7 @@ if(have_posts()){
                 
                 <div class="row">
                     
-                    <div class="col-lg-4 col-md-4 pb-4">
+                    <div class="col-lg-4 col-md-4 pb-4 d-none d-lg-block">
                         
                         <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top shadow']); ?>
                         

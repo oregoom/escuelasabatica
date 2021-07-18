@@ -12,15 +12,6 @@ if(have_posts()){
 
 
 
-<!--//GOOGLE ADSENSE 320x50 (Movil) -->
-<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
-    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
-        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
-    </div>   
-<?php } ?>
-
-
-
 
 <main>
     <article>        
@@ -64,7 +55,7 @@ if(have_posts()){
                     $query_home_hb = new WP_Query( array (
                             'post_type' => 'page',
                             'post_status' => 'publish',
-                            'order'   => 'ASC',
+                            'order'   => 'DESC',
                             'post__not_in' => $NOT_page,
                             'posts_per_page' => -0
                             ));            

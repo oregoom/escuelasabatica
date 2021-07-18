@@ -282,20 +282,18 @@ function google_adsense_content_page_menu(){
                         </td>                        
                     </tr>
                     
-                    <!--CODE ADSENSE (320x50)-->
+                    <!--CODE ADSENSE (Google AMP Auto)-->
                     <tr>
                         <th scope="row">
-                            <label for="template_oregoom_adsense_320_50">Code AdSense (320x50)</label>
+                            <label for="template_oregoom_adsense_google_amp_auto">Code AdSense (Google AMP Auto)</label>
                         </th>
                         <td>
                             
-                            <textarea name="template_oregoom_adsense_320_50" id="template_oregoom_adsense_320_50" style="min-height: 124px; width: 100%;"><?php echo esc_textarea(get_option('template_oregoom_adsense_320_50')); ?></textarea>
-                            <p class="description">Este formato, también denominado "rectángulo mediano", suele ofrecer un 
-                                mayor inventario de anuncios de anunciantes, lo que puede aumentar los ingresos si se 
-                                habilitan tanto los anuncios de texto como los anuncios de imagen.</p>
-                            <p class="description">Ofrece un buen rendimiento cuando se inserta en contenido de 
-                                texto o al final de los artículos.</p>
-                            <p class="description"><strong>NOTA:</strong> Opción recomendada para móviles</p>
+                            <textarea name="template_oregoom_adsense_google_amp_auto" id="template_oregoom_adsense_google_amp_auto" style="min-height: 124px; width: 100%;"><?php echo esc_textarea(get_option('template_oregoom_adsense_google_amp_auto')); ?></textarea>
+                            <p class="description">Permita que Google coloque anuncios gráficos en sus sitios de AMP</p>
+                            <p class="description">Active los anuncios automáticos para AMP y Google mostrará automáticamente anuncios en todos los sitios de AMP en su cuenta. Solo debe agregar 2 fragmentos de código a cada sitio de AMP en los que desea publicar anuncios.</p>
+                            <p class="description"><strong>NOTA:</strong> Opción recomendada</p>
+                            
                         </td>                        
                     </tr>
                     
@@ -344,7 +342,7 @@ function template_oregoom_register_options_admin_page() {
     register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_728_90');
     register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_300_600');
     register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_970_250');
-    register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_320_50');
+    register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_google_amp_auto');
     register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_adsense_auto');
     register_setting( 'template_oregoom_custom_admin_settings_group', 'template_oregoom_google_analytics');
     

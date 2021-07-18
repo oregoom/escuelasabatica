@@ -4,17 +4,7 @@
 
 if(have_posts()){
     
-    while(have_posts()) : the_post(); ?>
-    
-    
-    
-    <!--//GOOGLE ADSENSE 320x50 (Movil) -->
-<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
-    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
-        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
-    </div>   
-<?php } 
-    
+    while(have_posts()) : the_post();    
     
     
     
@@ -318,7 +308,7 @@ if(have_posts()){
 
 
 
-<section class="container text-center mb-4 mt-2 mt-md-0">
+<section class="container text-center mb-4 mt-3 mt-lg-0">
     
     <?php 
     

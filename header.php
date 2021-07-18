@@ -160,6 +160,18 @@
 </head>
     <body <?php body_class(); ?>>
         
+        
+        
+        
+        <!--//GOOGLE ADSENSE Google AMP (Auto) -->
+        <?php if(get_option('template_oregoom_adsense_google_amp_auto') != ''){ ?>                        
+                <?php  echo get_option('template_oregoom_adsense_google_amp_auto'); ?>
+        <?php } ?>
+        
+        
+        
+        
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm">
             <div class="container pt-0 pb-0">
                 <a class="navbar-brand" href="<?php echo esc_url("https://historiasdelabiblia.org/"); ?>"><img src="<?php echo get_template_directory_uri(); ?>/logo-oficial-hb.png" width="140"></a>

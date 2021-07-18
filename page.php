@@ -112,30 +112,33 @@ if(have_posts()){
 //                                $fecha_final = "$dia/$mes/$year";    
                                                                                                 
                                 if( (Date("Ymd") >= $fecha_inicio) && (Date("Ymd") <= $fecha_final) ) {
-                                                                        
+                                                                                   
                                     $wp_query_post = new WP_Query( array (
                                             'post_type' => 'post',
                                             'post_status' => 'publish',
-                                            'meta_key'   => 'fecha_leccion',
-                                            'meta_value' => date("Ymd"), //Fecha presente, si no cumple... no imprime en contenido
+                                            'meta_query' => array(
+                                                array(
+                                                    'key'   => 'fecha_leccion',
+                                                    'value' => date("Ymd"), //Fecha presente, si no cumple... no imprime en contenido
+                                                ),
+                                                array(
+                                                    'key'   => 'dia_nombre_leccion',
+                                                    'value' => 'ElSabado',
+                                                    'compare' => '!=', //Diferente al value
+                                                ),
+                                            ),
                                             'posts_per_page' => -0
                                     ));
                                                                         
                                     if($wp_query_post->have_posts()){
                                         
-                                        while ($wp_query_post->have_posts()) : $wp_query_post->the_post();                                                                                 
-                                        
-                                            $day_leccion = get_post_meta(get_the_ID(), 'dia_nombre_leccion', true); 
-
-                                            if( $day_leccion == "Saturday") { ?>
-
-                                                <li class="h5 pt-2 pb-1 border-top">
-                                                    <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4 text-danger">
-                                                        <small><?php echo $title_post_leccion; ?></small>
-                                                    </a>
-                                                </li> <?php
-                                            
-                                            }
+                                        while ($wp_query_post->have_posts()) : $wp_query_post->the_post();  ?>
+                            
+                                            <li class="h5 pt-2 pb-1 border-top">
+                                                <a style="line-height: 1em; font-family: Raleway, sans-serif;" href="<?php the_permalink(); ?>" class="h4 text-danger">
+                                                    <small><?php echo $title_post_leccion; ?></small>
+                                                </a>
+                                            </li> <?php
 
                                         endwhile;
                                         

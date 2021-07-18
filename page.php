@@ -6,6 +6,16 @@ if(have_posts()){
     
     while(have_posts()) : the_post();  ?>
 
+
+<!--//GOOGLE ADSENSE 320x50 (Movil) -->
+<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
+    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
+        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
+    </div>   
+<?php } ?>
+
+
+
 <div class="d-none d-lg-block container-fluid pb-0 mb-0">
     
     <nav aria-label="breadcrumb" class="container d-none d-lg-block">
@@ -33,20 +43,15 @@ if(have_posts()){
                     </div>                
                 <?php } ?>
                 
-                <!--//GOOGLE ADSENSE 320x50 (Movil) -->
-                <?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?>                
-                    <div class="text-center d-lg-none sticky-top">                        
-                        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
-                    </div>                
-                <?php } ?>
-                
             </div>
             
-            <h1 class="mt-4 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;"><?php the_title(); ?></h1>
+            <h1 class="mt-4 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;">
+                <?php the_title(); ?>
+            </h1>
             
             <div class="mt-2 text-center">
                 
-                <h2><span class="h3">Guía de estudio de la Biblia</span></h2>
+                <h2>Guía de estudio de la Biblia</h2>
                 
                 <p><strong><?php echo get_post_meta(get_the_ID(), 'periodo_de_guia_de_estudio_de_la_biblia', true); ?></strong></p>
 

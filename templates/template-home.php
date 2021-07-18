@@ -8,16 +8,24 @@ get_header();
 
 if(have_posts()){
     
-    while(have_posts()) : the_post(); 
-        
-//        echo esc_html__(get_the_content());
-    
-//        $Content_home_page = get_the_content(); ?>
+    while(have_posts()) : the_post(); ?>
+
+
+
+<!--//GOOGLE ADSENSE 320x50 (Movil) -->
+<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
+    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
+        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
+    </div>   
+<?php } ?>
+
+
+
 
 <main>
     <article>        
         
-        <section class="container pt-5 pb-3">
+        <section class="container pt-3 pt-md-5 pb-3">
             
             <h1 class="pb-2 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;"><span style="color: #f76300;">Escuela</span> Sabática<?php // the_title(); ?></h1>
                         
@@ -27,13 +35,6 @@ if(have_posts()){
                 <?php if(get_option('template_oregoom_adsense_728_90') != ''){ ?>                
                     <div class="text-center d-none d-lg-block">                        
                         <?php echo get_option('template_oregoom_adsense_728_90'); ?>                        
-                    </div>                
-                <?php } ?>
-                
-                <!--//GOOGLE ADSENSE 320x50 (Movil) -->
-                <?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?>                
-                    <div class="text-center d-lg-none sticky-top">                        
-                        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
                     </div>                
                 <?php } ?>
                 
@@ -77,7 +78,7 @@ if(have_posts()){
 
                     <?php while($query_home_hb->have_posts()) : $query_home_hb->the_post(); ?>
                     
-                        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <div class="col-xl-3 col-lg-4 col-6 mb-4">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid rounded-top shadow']); ?>
                                 <!--<img class="rounded-top img-fluid" src="https://historiasdelabiblia.org/wp-content/uploads/2020/06/historia-del-arca-noe.jpg">-->

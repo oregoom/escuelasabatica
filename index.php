@@ -4,7 +4,20 @@
 
 if(have_posts()){
     
-    while(have_posts()) : the_post(); 
+    while(have_posts()) : the_post(); ?>
+    
+    
+    
+    <!--//GOOGLE ADSENSE 320x50 (Movil) -->
+<?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?> 
+    <div class="text-center d-lg-none sticky-top mt-2 pb-2 bg-white">                        
+        <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
+    </div>   
+<?php } 
+    
+    
+    
+    
    
 /*
  * FUNCIÓN PARA RECUPERAR ANTIGUOS POST
@@ -296,30 +309,16 @@ if(have_posts()){
 
 
 
-<section class="container pt-1 pb-4">
-            
-    <div class="text-center">
-
-        <!--//GOOGLE ADSENSE 728x90 (PC) -->
-        <?php if(get_option('template_oregoom_adsense_728_90') != ''){ ?>                
-            <div class="text-center d-none d-lg-block">                        
-                <?php echo get_option('template_oregoom_adsense_728_90'); ?>                        
-            </div>                
-        <?php } ?>
-
-        <!--//GOOGLE ADSENSE 320x50 (Movil) -->
-        <?php if(get_option('template_oregoom_adsense_320_50') != ''){ ?>                
-            <div class="text-center d-lg-none sticky-top">                        
-                <?php  echo get_option('template_oregoom_adsense_320_50'); ?>                        
-            </div>                
-        <?php } ?>
-
-    </div>
-    
-</section>
+<!--//GOOGLE ADSENSE 728x90 (PC) -->
+<?php if(get_option('template_oregoom_adsense_728_90') != ''){ ?>                
+    <div class="container pt-1 pb-4 text-center d-none d-lg-block">                        
+        <?php echo get_option('template_oregoom_adsense_728_90'); ?>                        
+    </div>                
+<?php } ?>
 
 
-<section class="container text-center mb-4">
+
+<section class="container text-center mb-4 mt-2 mt-md-0">
     
     <?php 
     
@@ -738,7 +737,7 @@ if(have_posts()){
 
 <article>
     
-    <section class="container pb-5">
+    <section class="container pb-lg-5 pb-1">
         
         <h1 class="pt-1 text-center" style="font-family: 'Salsa'; font-weight: 600; font-size: 50px;"><?php the_title(); ?></h1>
         
@@ -756,10 +755,14 @@ if(have_posts()){
         
         if($dia_nombre_leccion == "EL Sábado enseñaré..."){ ?>      
         
-            <h2 class="mb-4 text-center"><span class="h4" style="font-family: 'Salsa'; font-weight: 400;"><?php echo "Sábado $dia de $mes enseñaré..."; ?></span></h2> <?php
+            <h2 class="mb-4 text-center">
+                <span class="h4" style="font-family: 'Salsa'; font-weight: 400;"><?php echo "Sábado $dia de $mes enseñaré..."; ?></span>
+            </h2> <?php
             
         } else { ?>
-            <h2 class="mb-4 text-center"><span class="h4" style="font-family: 'Salsa'; font-weight: 400;"><?php echo "$dia_nombre_leccion $dia de $mes"; ?></span></h2> <?php
+            <h2 class="mb-4 text-center">
+                <span class="h5" style="font-family: 'Salsa'; font-weight: 400;"><?php echo "$dia_nombre_leccion $dia de $mes"; ?></span>
+            </h2> <?php
         } ?>
         
         
